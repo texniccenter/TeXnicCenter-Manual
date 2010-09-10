@@ -5,8 +5,8 @@ Additional dictionaries
 -----------------------
 
 TeXnicCenter is distributed with English, German and French dictionaries.
-Dictionaries for several other languages are provided by the OpenOffice.org
-project http://wiki.services.openoffice.org/wiki/Dictionaries.
+Dictionaries for several other languages are provided by the `OpenOffice.org
+project <http://wiki.services.openoffice.org/wiki/Dictionaries>`_.
 
 Installing dictionaries
 -----------------------
