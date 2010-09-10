@@ -1,0 +1,4 @@
+glob:build
+glob:*.*~
+glob:*.swp
+glob:*.orig
