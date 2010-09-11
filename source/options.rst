@@ -5,8 +5,14 @@ TeXnicCenter provides many options to configure the application, making usage
 easier. To change these options, open the dialog :dialog:`Options` by choosing
 the menu item :menuselection:`Tools --> Options...`.
 
+.. index::
+  options
+
 General options
 ---------------
+
+.. index::
+  options; general
 
 The :tab:`General` options page in the dialog :dialog:`Options` allows to modify
 general options for TeXnicCenter.
@@ -44,6 +50,9 @@ The meaning of the controls is:
 Files options 
 -------------
 
+.. index::
+  options; files
+
 The :tab:`Files` options page in the dialog :dialog:`Options` allows to modify
 the file handling of TeXnicCenter.
 
@@ -79,6 +88,9 @@ The meaning of the controls is:
 Directories options
 -------------------
 
+.. index::
+  options; directories
+
 The :tab:`Directories` options page in the :dialog:`Options` dialog allows to
 modify the directory paths used by TeXnicCenter.
 
@@ -107,6 +119,9 @@ The meaning of the controls is:
 
 Spelling options
 ----------------
+
+.. index::
+  options; spelling
 
 The :tab:`Spelling` options page in the :dialog:`Options` dialog allows users to
 set spelling and language options for TeXnicCenter. See Advanced configuration
@@ -195,6 +210,9 @@ following content::
 
 Clean options
 -------------
+
+.. index::
+  options; clean
 
 The :tab:`Clean` options page in the :dialog:`Options` dialog allows to modify
 file protection and file deletion options when :menuselection:`Build --> Clean
@@ -287,6 +305,9 @@ applying them.
 
 Text format options
 -------------------
+
+.. index::
+  options; text format
 
 TeXnicCenter allows to customize the font family, style and size for the
 navigator bar, the output bar and the editor window. Additionally, editor colors

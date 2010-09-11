@@ -21,6 +21,9 @@ Using projects is very simple. Just create a new project before starting to work
 on a new document. If the requirements for the project have changed, it is easy
 to simply modify project's properties.
 
+.. index::
+  project
+
 .. _create-new-project:
 
 Creating a new project

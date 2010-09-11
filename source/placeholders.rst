@@ -21,6 +21,9 @@ There a two types of placeholders in TeXnicCenter:
 **Placeholders for sets of files**
   This kind of placeholders are used to deal with more than one file at a time. 
 
+.. index::
+  placeholder
+
 
 Placeholders for single files 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -29,11 +29,23 @@ remember command-line parameters. TeXnicCenter supports advanced LaTeX users as
 well by providing a powerful, fully customizable integrated development
 environment.
 
+.. index:: 
+  inverse search
+  BibTeX, LaTeX, MakeIndex
+  IDE
+
 Requirements
 ------------
 
-To generate documents TeXnicCenter requires a LaTeX distribution to be
+To typeset LaTeX documents TeXnicCenter requires a LaTeX distribution to be
 installed. Major LaTeX distributions supported by TeXnicCetner are `MiKTeX
 <http://miktex.org/>`_ and `TeX Live
-<http://www.tug.org/texlive/windows.html>`_.
+<http://www.tug.org/texlive/windows.html>`_. To view typeset PDF documents a PDF
+viewer should be installed as well. Recommended PDF viewer is `Sumatra PDF
+<http://blog.kowalczyk.info/software/sumatrapdf>`_.
+
+.. index:: 
+  viewer, viewer; PDF
+  Sumatra PDF
+  MiKTeX, TeX Live, distribution
 

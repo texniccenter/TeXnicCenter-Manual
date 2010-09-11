@@ -26,6 +26,9 @@ options. If one or more directories contain the same sub-directory TeXnicCenter
 will display the files found in those sub-directories together in one merged
 list.
 
+.. index::
+  templates
+
 Example
 -------
 
@@ -101,6 +104,9 @@ will copy the selected template file to the project's directory, rename it to
 the project's name, remove the description line (if there is any) and replace
 the line delimiters with the ones, specified in the dialog 'Project New'.
 
+.. index::
+  templates; file based
+
 Example
 ^^^^^^^
 
@@ -137,4 +143,7 @@ DLL. Some important languages which are providing the necessary features, are:
 
 To learn more about how to write document wizards, take a look at the
 TeXnicCenter homepage.
+
+.. index::
+  templates; document wizard
 
