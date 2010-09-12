@@ -103,7 +103,7 @@ The meanings of the controls are:
   can create a new entry by choosing the new button (rectangle), remove the
   selected entry by choosing the delete button (cross) and move the selected
   entry up or down in the menu by choosing the up or down button.  To change the
-  entry name, simply select an item and press :key:`F2`. 
+  entry name, simply select an item and press :kbd:`F2`. 
 
 **Command**
   Specify the full path of the application to start, when the selected entry
@@ -204,7 +204,7 @@ Application Frame Menus
 Context Menus
 ^^^^^^^^^^^^^
 
-**Select Context Menu**
+**Select context menu**
   List of available context menus. Select the menu you would like to customize.
   Context menus pop up, when you click the right mouse button.  TeXnicCenter
   uses the following context menus.
@@ -248,6 +248,6 @@ The controls of the page are having the following meanings:
   If this option is enabled, the ScreenTips will contain the shortcut for the
   specific command besides the short description of the command. 
 
-**Large Icon**
+**Large Icons**
   If this option is enabled all toolbar icons will be displayed in double size. 
 

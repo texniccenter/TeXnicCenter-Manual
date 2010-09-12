@@ -34,16 +34,16 @@ for command line tools (like LaTeX) and DDE-commands need to be defined.
 .. Naming conventions 
    """"""""""""""""""
 
-Placeholders for single files have to begin with a percent sign ('%') followed
+Placeholders for single files have to begin with a percent sign ``%`` followed
 by up to three characters. The last character specifies which files the
 placeholder refers to:
 
 
 **m**
-  The current project's main file. 
+  Current project's main filename. 
 
 **c**
-  The current file -- The file opened in the editor that has the input focus. 
+  Current filename, i.e. the file opened in the editor that has the input focus. 
 
 The character before the last character describes how to reference the specified
 file:
@@ -52,7 +52,8 @@ file:
   The file's fully qualified path. 
 
 **w**
-  The file's relative path starting in project directory (= working directory). 
+  The file's relative path starting in project directory, i.e. working
+  directory. 
 
 **d**
   The file's directory. 
@@ -70,16 +71,17 @@ file:
   The file's base (fully qualified path without the file extension).
 
 **r**
-  The file's drive letter (followed by colon ':'). 
+  The file's drive letter (followed by colon ``:``). 
 
-Instead of 'p', 'w', 'd' and 'm' use the uppercase variants of these characters
-to get slashes ('/') instead of backslashes ('\\') as path separators.
+Instead of ``p``, ``w``, ``d`` and ``m`` use the uppercase variants of these
+characters to get slashes ``/`` instead of backslashes ``\\`` as path
+separators.
 
-The percent sign ('%') can be followed by an 's'. In this case, the placeholders
-will be replaced with paths matching the old 8.3 path convention.
+The percent sign ``%`` can be followed by an ``s``. In this case, the
+placeholders will be replaced with paths matching the old 8.3 path convention.
 
 To get a percent sign in the resulting string you have to use the placeholder
-'%%' which will always be replaced by '%'.
+``%%`` which will always be replaced by ``%``.
 
 Placeholders referring to project's main file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,25 +141,25 @@ Placeholders for 8.3 path notation
 """"""""""""""""""""""""""""""""""
 
 **%spm**
-  Same as '%pm', but using the 8.3 path notation.
+  Same as ``%pm``, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\JustAT~1.tex`
 
 **%sdm**
-  Same as '%dm', but using the 8.3 path notation.  
+  Same as ``%dm``, but using the 8.3 path notation.  
   :file:`C:\\MyDocu~1\\TxcTest`
 
 **%snm**
-  Same as '%nm', but using the 8.3 path notation.  
+  Same as ``%nm``, but using the 8.3 path notation.  
   :file:`JustAT~1.tex`
 
 **%stm**
-  Same as '%tm', but using the 8.3 path notation.  :file:`JustAT~1`
+  Same as ``%tm``, but using the 8.3 path notation.  :file:`JustAT~1`
 
 **%sem**
-  Same as '%em', but using the 8.3 path notation.  :file:`tex`
+  Same as ``%em``, but using the 8.3 path notation.  :file:`tex`
 
 **%sbm**
-  Same as '%sbm', but using the 8.3 path notation.
+  Same as ``%sbm``, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\JustAT~1`
 
 
@@ -165,15 +167,15 @@ Placeholders for 8.3 path notation with slashes instead of backslashes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 **%sPm**
-  Same as '%spm', but using slashes instead of backslashes.
+  Same as ``%spm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/JustAT~1.tex`
 
 **%sDm**
-  Same as '%sdm', but using slashes instead of backslashes.
+  Same as ``%sdm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest`
 
 **%sBm**
-  Same as '%sbm', but using slashes instead of backslashes.
+  Same as ``%sbm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/JustAT~1`
 
 
@@ -221,15 +223,15 @@ Placeholders with slashes instead of backslashes
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 **%Pc**
-  Same as '%pm', but using slashes instead of backslashes.  :file:`C:/My
+  Same as ``%pm``, but using slashes instead of backslashes.  :file:`C:/My
   Documents/TxcTest/SubDir/AnotherTest.tex`
 
 **%Dc**
-  Same as '%dm', but using slashes instead of backslashes.  :file:`C:/My
+  Same as ``%dm``, but using slashes instead of backslashes.  :file:`C:/My
   Documents/TxcTest/SubDir`
 
 **%Bc**
-  Same as '%bm', but using slashes instead of backslashes.  :file:`C:/My
+  Same as ``%bm``, but using slashes instead of backslashes.  :file:`C:/My
   Documents/TxcTest/SubDir/AnotherTest`
 
 
@@ -237,24 +239,24 @@ Placeholders for 8.3 path notation
 """"""""""""""""""""""""""""""""""
 
 **%spc**
-  Same as '%pm', but using the 8.3 path notation.
+  Same as ``%pm``, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir\\Anothe~1.tex`
 
 **%sdc**
-  Same as '%dm', but using the 8.3 path notation.
+  Same as ``%dm``, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir"`
 
 **%snc**
-  Same as '%nm', but using the 8.3 path notation.  :file:`Anothe~1.tex`
+  Same as ``%nm``, but using the 8.3 path notation.  :file:`Anothe~1.tex`
 
 **%stc**
-  Same as '%tm', but using the 8.3 path notation.  :file:`Anothe~1`
+  Same as ``%tm``, but using the 8.3 path notation.  :file:`Anothe~1`
 
 **%sec**
-  Same as '%em', but using the 8.3 path notation.  :file:`tex`
+  Same as ``%em``, but using the 8.3 path notation.  :file:`tex`
 
 **%sbc**
-  Same as '%sbm', but using the 8.3 path notation.
+  Same as ``%sbm``, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir\\Anothe~1`
 
 
@@ -262,15 +264,15 @@ Placeholders for 8.3 path notation with slashes instead of backslashes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 **%sPc**
-  Same as '%spm', but using slashes instead of backslashes.
+  Same as ``%spm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir/Anothe~1.tex`
 
 **%sDc**
-  Same as '%sdm', but using slashes instead of backslashes.
+  Same as ``%sdm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir`
 
 **%sBc**
-  Same as '%sbm', but using slashes instead of backslashes.
+  Same as ``%sbm``, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir/Anothe~1`
 
 
@@ -291,7 +293,7 @@ Other placeholders
 """"""""""""""""""
 
 **%%**
-  Will be replaced by the string '%'. 
+  Will be replaced by the string ``%``. 
 
 
 Placeholders for sets of files
@@ -307,16 +309,16 @@ Placeholders can be used for handling sets of files.
 **$[q][s][f][r]<FILESET>**
 
 **$**
-  Starts the placeholder. Use "$$" to get "$". 
+  Starts the placeholder. Use ``$$`` to get ``$``. 
 
 **q**
-  All filenames will be separatly quoted using ".
+  All filenames will be separatly quoted using ``"``.
 
 **s**
   All filenames will be issued in 8.3-format.
 
 **f**
-  The forward slash '/' is used as directory separator.
+  The forward slash ``/`` is used as directory separator.
 
 **r**
   The filenames will be given relative to the working directory of the project. 
@@ -335,7 +337,7 @@ Placeholders can be used for handling sets of files.
 
   **TXC**
     All files generated by TeXnicCenter regarding the project. Currently only
-    the .tcp and .tps files. 
+    the :file:`.tcp` and :file:`.tps` files. 
 
   **COF**
     All currently opened files in the editor.
@@ -352,14 +354,13 @@ Examples
 **$qTPF**
   Lists all (La)TeX-files reported by the structure parser of TeXnicCenter. File
   names in quotes and separated by a space, like:
-  :file:`"D:\\Temp\\test\\curvature3d.tex" "D:\\Temp\\test\\definitions\\macros.tex"
-  "D:\\Temp\\test\\chaptertwo.tex"`
-  
-**$fBPF**
+  :file:`"D:\\Temp\\test\\curvature3d.tex"
+  "D:\\Temp\\test\\definitions\\macros.tex" "D:\\Temp\\test\\chaptertwo.tex"`
+
+**$fBPF** 
   Lists all BibTeX-files reported by the structure parser of TeXnicCenter. The
   forward slash is used as directory separator. File names separated by a space,
-  like:
-  :file:`D:/Temp/test/xbib.bib D:/Temp/test/morebibs/morexbib.bib`
+  like: :file:`D:/Temp/test/xbib.bib D:/Temp/test/morebibs/morexbib.bib`
 
 **$COF**
   Lists all files, which are currently opened in the editor. File names
@@ -368,12 +369,11 @@ Examples
   Files\\texmf\\pdftex\\latex\\config\\pdflatex.ini`
 
 **$qsrAPF**
-
   Lists all files of the project as reported by the structure parser of
   TeXnicCenter. File names displayed in 8.3-format, path relative to the working
-  directory, file names separated by a space, like:
-  :file:`"curvat~1.tcp" "curvat~1.tps" "curvat~1.tex" "xbib.bib"
-  "morebibs\\morexb~1.bib" "defini~1\\macros.tex" "chapte~1.tex"`
+  directory, file names separated by a space, like: :file:`"curvat~1.tcp"
+  "curvat~1.tps" "curvat~1.tex" "xbib.bib" "morebibs\\morexb~1.bib"
+  "defini~1\\macros.tex" "chapte~1.tex"`
 
 Application example
 ^^^^^^^^^^^^^^^^^^^
@@ -383,9 +383,7 @@ will build a ZIP archive of all files of the current project. A compression
 program (like WinZip or WinRAR) is required. Adjust path and arguments for that
 program.
 
-
 * **Command**: :command:`zip.exe`
-* **Arguments**: a "%tm.zip" $qrAPF 
-* **Initial Directory**: %dm 
-
+* **Arguments**: ``a "%tm.zip" $qrAPF``
+* **Initial Directory**: ``%dm``
 

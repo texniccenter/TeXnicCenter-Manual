@@ -13,7 +13,7 @@ Installing dictionaries
 
 Each Hunspell dictionary consist of two main files. Copy both the affix file,
 ``language-dialect.aff``, and the dictionary file, ``language-dialect.dic`` into
-the Language directory of your TeXnicCenter installation. The new dictionary
+the ``Language`` directory of your TeXnicCenter installation. The new dictionary
 will appear in the :tab:`Spelling` option page immediately, but your new
 selection will not take affect until after you restarted TeXnicCenter.
 

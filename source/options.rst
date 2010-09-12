@@ -14,7 +14,7 @@ General options
 .. index::
   options; general
 
-The :tab:`General` options page in the dialog :dialog:`Options` allows to modify
+The :tab:`General` options page in the :dialog:`Options` dialog allows to modify
 general options for TeXnicCenter.
 
 .. figure:: images/optionsgeneral.*
@@ -24,17 +24,16 @@ general options for TeXnicCenter.
 The meaning of the controls is:
 
 **Restore last session on start up**
-  If  this option is enabled, then when TeXnicCenter starts up it will reload
-  the project and any files that were open before TeXnicCenter was closed the
-  last time. 
+  If enabled TeXnicCenter will reload the project and all files that were open
+  before TeXnicCenter was closed the last time. 
 
 **Replace quotation marks**
   If this option is enabled, TeXnicCenter will do two related things:
   
-  * Replace opening quotation marks with the string specified by `Opening
-    quotation mark`
-  * Replace closing quotation marks with the string specified by `Closing
-    quotation mark` 
+  * Replace opening quotation marks with the string specified by *Opening
+    quotation mark*
+  * Replace closing quotation marks with the string specified by *Closing
+    quotation mark*
   
   when the user types the quotation mark (") character. 
   
@@ -188,7 +187,7 @@ The meaning of the controls is:
 
   
 After spell checking has finished, TeXnicCenter saves the words you added to the
-dictionary or those you marked as `ignore` in the project directory. These words
+dictionary or those you marked as *ignore* in the project directory. These words
 will be considered in future sessions, so that you don't have to mark them
 again. 
 
@@ -346,7 +345,7 @@ The meanings of the controls are:
   window type. If the current window type is 'Editor', only fonts with a fixed
   width per character are available.
 
-**Item** (only available for window type 'Editor') 
+**Item** (only available for window type `Editor`) 
   Allows to specify the editor item whose appearance should be modified.
 
   **Selection Margin**
@@ -359,9 +358,8 @@ The meanings of the controls are:
     Background of the text.
     
     .. note::
-      This will not change the whole background of the editor window, only the
-      areas, where text is placed. To change the background of the editor
-      window, change the display properties of your Windows operating system. 
+      This option will not change the background of the editor window but only
+      the areas where text is placed.
 
   **Normal Text**
     Normal text.
@@ -396,10 +394,10 @@ The meanings of the controls are:
   **Matched brace text**
     The text of matched brace.
   
-  **Matched brace background(at cursor)**
+  **Matched brace background (at cursor)**
     The background of brace at cursor.
   
-  **Matched brace text(at cursor)**
+  **Matched brace text (at cursor)**
     The text of brace at cursor.
     
   **Block background between braces**
@@ -415,12 +413,13 @@ The meanings of the controls are:
     The appearance of single digits.  
 
   **Units**
-    The appearance of unit specifiers.
+    The appearance of unit specifiers ``em``, ``ex``, ``pt``, ``pc``, ``in``,
+    ``bp``, ``cm``, ``mm``, ``dd``, ``cc``, ``sp``.
 
 **Color Picker** (only available for window type `Editor`)
-  Choose the color for the selected element here. The color 'Automatic' is the
+  Choose the color for the selected element here. The color ``Automatic`` is the
   default value for the selected element. 
 
-**Tabulator width** (only available for window type 'Editor')
+**Tabulator width** (only available for window type `Editor`)
   Specifies the width of a tabulator in characters. 
 

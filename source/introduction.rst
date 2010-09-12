@@ -18,7 +18,7 @@ messages by clicking an appropriate toolbar button
 
 Viewing the typeset document is easy with TeXnicCenter. Just choose the
 appropriate menu item and the right viewer application will be started.
-Document viewers that support TeXnicCenter's `inverse search` will allow to
+Document viewers that support TeXnicCenter's *inverse search* will allow to
 switch between the typeset document and the corresponding line in the source.
 
 TeXnicCenter's aim is to support unexperienced LaTeX users by providing most

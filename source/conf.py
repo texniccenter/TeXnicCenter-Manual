@@ -209,12 +209,11 @@ from sphinx import addnodes
 import docutils.nodes
 
 def setup(app):
-  app.add_description_unit('func', 'func', 'pair: %s; function', None,
-      docutils.nodes.block_quote)
-  app.add_generic_role('tab', docutils.nodes.emphasis)
-  app.add_generic_role('dialog', docutils.nodes.emphasis)
+  app.add_crossref_type('tab', 'tab',
+      ref_nodeclass = docutils.nodes.emphasis)
+  app.add_crossref_type('dialog', 'dialog', 
+      ref_nodeclass = docutils.nodes.emphasis)
   app.add_generic_role('button', docutils.nodes.emphasis)
   app.add_generic_role('control', docutils.nodes.emphasis)
   app.add_generic_role('parameter', docutils.nodes.emphasis)
-  app.add_generic_role('key', docutils.nodes.strong)
 
