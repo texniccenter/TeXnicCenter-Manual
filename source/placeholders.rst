@@ -39,49 +39,59 @@ by up to three characters. The last character specifies which files the
 placeholder refers to:
 
 
-**m**
+.. placeholder:: m
+
   Current project's main filename. 
 
-**c**
+.. placeholder:: c
+
   Current filename, i.e. the file opened in the editor that has the input focus. 
 
 The character before the last character describes how to reference the specified
 file:
 
-**p**
+.. placeholder:: p
+
   The file's fully qualified path. 
 
-**w**
+.. placeholder:: w
+
   The file's relative path starting in project directory, i.e. working
   directory. 
 
-**d**
+.. placeholder:: d
+
   The file's directory. 
 
-**n**
+.. placeholder:: n
+
   The file's name (name and extension).
 
-**t**
+.. placeholder:: t
+
   The file's title (name without extension). 
 
-**e**
+.. placeholder:: e
+
   The file's extension. 
 
-**b**
+.. placeholder:: b
+
   The file's base (fully qualified path without the file extension).
 
-**r**
+.. placeholder:: r
+
   The file's drive letter (followed by colon ``:``). 
 
-Instead of ``p``, ``w``, ``d`` and ``m`` use the uppercase variants of these
-characters to get slashes ``/`` instead of backslashes ``\\`` as path
-separators.
+Instead of :placeholder:`p`, :placeholder:`w`, :placeholder:`d` and
+:placeholder:`m` use the uppercase variants of these characters to get slashes
+``/`` instead of backslashes ``\\`` as path separators.
 
-The percent sign ``%`` can be followed by an ``s``. In this case, the
+The percent sign ``%`` can be followed by an :placeholder:`s`. In this case, the
 placeholders will be replaced with paths matching the old 8.3 path convention.
 
 To get a percent sign in the resulting string you have to use the placeholder
-``%%`` which will always be replaced by ``%``.
+:placeholder:`%%` which will always be replaced by ``%``.
 
 Placeholders referring to project's main file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,31 +103,38 @@ placeholders will be replaced with the equivalents for the current file.
 The examples in brackets show how the placeholder will be replaced, if the
 current project's main file is :file:`C:\\My Documents\\TxcTest\\JustATest.tex`.
 
-**%pm** 
+.. placeholder:: %pm 
+
   Will be replaced by the full path of the current project's main file.  
   :file:`C:\\My Documents\\TxcTest\\JustATest.tex`
 
-**%wm**
+.. placeholder:: %wm
+
   Will be replaced by the relative path of the current project's main file.
   :file:`JustATest.tex`
 
-**%dm**
+.. placeholder:: %dm
+
   Will be replaced by the directory of the current project's main file.  
   :file:`C:\\My Documents\\TxcTest`
 
-**%nm**
+.. placeholder:: %nm
+
   Will be replaced by the name of the current project's main file. The name
   includes the file extension.  :file:`JustATest.tex`
 
-**%tm**
+.. placeholder:: %tm
+
   Will be replaced by the title of the current project's main file. The title
   does not include the file extension.  :file:`JustATest`
 
-**%em**
+.. placeholder:: %em
+
   Will be replaced by the extension of the current project's main file. 
   :file:`tex`
 
-**%bm**
+.. placeholder:: %bm
+
   Will be replaced by the base of the current project's main file. The base
   includes the directory followed by the file's title without the file
   extension.  :file:`C:\\My Documents\\TxcTest\\JustATest`
@@ -125,57 +142,69 @@ current project's main file is :file:`C:\\My Documents\\TxcTest\\JustATest.tex`.
 Placeholders with slashes instead of backslashes
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-**%Pm**
-  Same as '%pm' but using slashes instead of backslashes.  
+.. placeholder:: %Pm
+
+  Same as :placeholder:`%pm` but using slashes instead of backslashes.  
   :file:`C:/My Documents/TxcTest/JustATest.tex`
 
-**%Dm**
-  Same as '%dm' but using slashes instead of backslashes.  
+.. placeholder:: %Dm
+
+  Same as :placeholder:`%dm` but using slashes instead of backslashes.  
   :file:`C:/My Documents/TxcTest`
 
-**%Bm**
-  Same as '%bm' but using slashes instead of backslashes.  
+.. placeholder:: %Bm
+
+  Same as :placeholder:`%bm` but using slashes instead of backslashes.  
   :file:`C:/My Documents/TxcTest/JustATest`
 
 Placeholders for 8.3 path notation
 """"""""""""""""""""""""""""""""""
 
-**%spm**
-  Same as ``%pm``, but using the 8.3 path notation.
+.. placeholder:: %spm
+
+  Same as :placeholder:`%pm`, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\JustAT~1.tex`
 
-**%sdm**
-  Same as ``%dm``, but using the 8.3 path notation.  
+.. placeholder:: %sdm
+
+  Same as :placeholder:`%dm`, but using the 8.3 path notation.  
   :file:`C:\\MyDocu~1\\TxcTest`
 
-**%snm**
-  Same as ``%nm``, but using the 8.3 path notation.  
+.. placeholder:: %snm
+
+  Same as :placeholder:`%nm`, but using the 8.3 path notation.  
   :file:`JustAT~1.tex`
 
-**%stm**
-  Same as ``%tm``, but using the 8.3 path notation.  :file:`JustAT~1`
+.. placeholder:: %stm
 
-**%sem**
-  Same as ``%em``, but using the 8.3 path notation.  :file:`tex`
+  Same as :placeholder:`%tm`, but using the 8.3 path notation.  :file:`JustAT~1`
 
-**%sbm**
-  Same as ``%sbm``, but using the 8.3 path notation.
+.. placeholder:: %sem
+
+  Same as :placeholder:`%em`, but using the 8.3 path notation.  :file:`tex`
+
+.. placeholder:: %sbm
+
+  Same as :placeholder:`%sbm`, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\JustAT~1`
 
 
 Placeholders for 8.3 path notation with slashes instead of backslashes 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-**%sPm**
-  Same as ``%spm``, but using slashes instead of backslashes.
+.. placeholder:: %sPm
+
+  Same as :placeholder:`%spm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/JustAT~1.tex`
 
-**%sDm**
-  Same as ``%sdm``, but using slashes instead of backslashes.
+.. placeholder:: %sDm
+
+  Same as :placeholder:`%sdm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest`
 
-**%sBm**
-  Same as ``%sbm``, but using slashes instead of backslashes.
+.. placeholder:: %sBm
+
+  Same as :placeholder:`%sbm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/JustAT~1`
 
 
@@ -187,33 +216,41 @@ file is the file opened in the editor, i.e it has the input focus. If no file is
 open in the editor the placeholders will not be replaced.
 
 The examples in brackets show, how the placeholder will be replaced, if the
-current file is :file:`C:\\My Documents\\TxcTest\\SubDir\\AnotherTest.tex` and the
-current project's main file is :file:`C:\\My Documents\\TxcTest\\JustATest.tex`.
+current file is :file:`C:\\My Documents\\TxcTest\\SubDir\\AnotherTest.tex` and
+the current project's main file is :file:`C:\\My
+Documents\\TxcTest\\JustATest.tex`.
 
-**%pc**
+.. placeholder:: %pc
+
   Will be replaced by the full path of the current file.  :file:`C:\\My
   Documents\\TxcTest\\SubDir\\AnotherTest.tex`
 
-**%wc**
+.. placeholder:: %wc
+
   Will be replaced by the relative path of the current file.
   :file:`SubDir\\AnotherTest.tex`
 
-**%dc**
+.. placeholder:: %dc
+
   Will be replaced by the directory of the current file.  :file:`C:\\My
   Documents\\TxcTest\\SubDir`
 
-**%nc**
+.. placeholder:: %nc
+
   Will be replaced by the name of the current file. The name includes the file
   extension.  :file:`AnotherTest.tex`
 
-**%tc**
+.. placeholder:: %tc
+
   Will be replaced by the title of the current file. The title does not include
   the file extension.  :file:`AnotherTest`
 
-**%ec**
+.. placeholder:: %ec
+
   Will be replaced by the extension of the current file.  :file:`tex`
 
-**%bc**
+.. placeholder:: %bc
+
   Will be replaced by the base of the current file. The base includes the
   directory followed by the file's title without the file extension. 
   :file:`C:\\My Documents\\TxcTest\\SubDir\\AnotherTest`
@@ -222,68 +259,83 @@ current project's main file is :file:`C:\\My Documents\\TxcTest\\JustATest.tex`.
 Placeholders with slashes instead of backslashes 
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-**%Pc**
-  Same as ``%pm``, but using slashes instead of backslashes.  :file:`C:/My
-  Documents/TxcTest/SubDir/AnotherTest.tex`
+.. placeholder:: %Pc
 
-**%Dc**
-  Same as ``%dm``, but using slashes instead of backslashes.  :file:`C:/My
-  Documents/TxcTest/SubDir`
+  Same as :placeholder:`%pm`, but using slashes instead of backslashes.
+  :file:`C:/My Documents/TxcTest/SubDir/AnotherTest.tex`
 
-**%Bc**
-  Same as ``%bm``, but using slashes instead of backslashes.  :file:`C:/My
-  Documents/TxcTest/SubDir/AnotherTest`
+.. placeholder:: %Dc
+
+  Same as :placeholder:`%dm`, but using slashes instead of backslashes.
+  :file:`C:/My Documents/TxcTest/SubDir`
+
+.. placeholder:: %Bc
+
+  Same as :placeholder:`%bm`, but using slashes instead of backslashes.
+  :file:`C:/My Documents/TxcTest/SubDir/AnotherTest`
 
 
 Placeholders for 8.3 path notation
 """"""""""""""""""""""""""""""""""
 
-**%spc**
-  Same as ``%pm``, but using the 8.3 path notation.
+.. placeholder:: %spc
+
+  Same as :placeholder:`%pm`, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir\\Anothe~1.tex`
 
-**%sdc**
-  Same as ``%dm``, but using the 8.3 path notation.
+.. placeholder:: %sdc
+
+  Same as :placeholder:`%dm`, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir"`
 
-**%snc**
-  Same as ``%nm``, but using the 8.3 path notation.  :file:`Anothe~1.tex`
+.. placeholder:: %snc
 
-**%stc**
-  Same as ``%tm``, but using the 8.3 path notation.  :file:`Anothe~1`
+  Same as :placeholder:`%nm`, but using the 8.3 path notation.
+  :file:`Anothe~1.tex`
 
-**%sec**
-  Same as ``%em``, but using the 8.3 path notation.  :file:`tex`
+.. placeholder:: %stc
 
-**%sbc**
-  Same as ``%sbm``, but using the 8.3 path notation.
+  Same as :placeholder:`%tm`, but using the 8.3 path notation.  :file:`Anothe~1`
+
+.. placeholder:: %sec
+
+  Same as :placeholder:`%em`, but using the 8.3 path notation.  :file:`tex`
+
+.. placeholder:: %sbc
+
+  Same as :placeholder:`%sbm`, but using the 8.3 path notation.
   :file:`C:\\MyDocu~1\\TxcTest\\SubDir\\Anothe~1`
 
 
 Placeholders for 8.3 path notation with slashes instead of backslashes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-**%sPc**
-  Same as ``%spm``, but using slashes instead of backslashes.
+.. placeholder:: %sPc
+
+  Same as :placeholder:`%spm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir/Anothe~1.tex`
 
-**%sDc**
-  Same as ``%sdm``, but using slashes instead of backslashes.
+.. placeholder:: %sDc
+
+  Same as :placeholder:`%sdm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir`
 
-**%sBc**
-  Same as ``%sbm``, but using slashes instead of backslashes.
+.. placeholder:: %sBc
+
+  Same as :placeholder:`%sbm`, but using slashes instead of backslashes.
   :file:`C:/MyDocu~1/TxcTest/SubDir/Anothe~1`
 
 
 Placeholders referrening to a selection in the current file 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**%l**
+.. placeholder:: %l
+
   Will be replaced with the line number, the cursor is placed in this line in
   the current file.  The first line has the number 1. 
 
-**%s**
+.. placeholder:: %s
+
   Will be replaced with the current selection in the current file. If nothing
   has been selected this placeholder will be replaced by the word the cursor is
   currently placed on. 
@@ -292,8 +344,13 @@ Placeholders referrening to a selection in the current file
 Other placeholders
 """"""""""""""""""
 
-**%%**
+.. placeholder:: %%
+
   Will be replaced by the string ``%``. 
+
+.. placeholder:: $$
+
+  Will be replaced by the string ``$``. 
 
 
 Placeholders for sets of files
@@ -306,74 +363,95 @@ Placeholders can be used for handling sets of files.
   These placeholders will never generate duplicates of a filename.
 
 
-**$[q][s][f][r]<FILESET>**
+``$[q][s][f][r]<FILESET>``
 
-**$**
-  Starts the placeholder. Use ``$$`` to get ``$``. 
+  ``$``
 
-**q**
-  All filenames will be separatly quoted using ``"``.
+    Starts the placeholder. Use :placeholder:`$$` to get ``$``. 
 
-**s**
-  All filenames will be issued in 8.3-format.
+  ``q``
 
-**f**
-  The forward slash ``/`` is used as directory separator.
+    All filenames will be separately quoted using ``"``.
 
-**r**
+  ``s``
+
+    All filenames will be issued in 8.3-format.
+
+  ``f``
+
+    The forward slash ``/`` is used as directory separator.
+
+  ``r``
+
   The filenames will be given relative to the working directory of the project. 
 
-**<FILESET>**
+``<FILESET>``
+
   One of the following: 
 
-  **TPF**
+  .. placeholder:: TPF
+
     All TeX-files of the project.
     
-  **BPF**
+  .. placeholder:: BPF
+
     All BibTeX-files of the project. 
   
-  **GPF**
+  .. placeholder:: GPF
+
     All Graphic-files of the project. 
 
-  **TXC**
+  .. placeholder:: TXC
+
     All files generated by TeXnicCenter regarding the project. Currently only
     the :file:`.tcp` and :file:`.tps` files. 
 
-  **COF**
+  .. placeholder:: COF
+
     All currently opened files in the editor.
 
-  **APF**
-    All project files. This is the sum of TPF, BPF, GPF and TXC.
+  .. placeholder:: APF
 
-  **AFS**
-    All above filesets together. This is the sum of TPF, BPF, GPF, TXC and COF. 
+    All project files. This is the sum of :placeholder:`TPF`,
+    :placeholder:`BPF`, :placeholder:`GPF` and :placeholder:`TXC`.
+
+  .. placeholder:: AFS
+
+    All above filesets together. This is the sum of :placeholder:`TPF`,
+    :placeholder:`BPF`, :placeholder:`GPF`, :placeholder:`TXC` and
+    :placeholder:`COF`. 
 
 Examples
 """"""""
 
-**$qTPF**
+``$qTPF``
+
   Lists all (La)TeX-files reported by the structure parser of TeXnicCenter. File
   names in quotes and separated by a space, like:
   :file:`"D:\\Temp\\test\\curvature3d.tex"
   "D:\\Temp\\test\\definitions\\macros.tex" "D:\\Temp\\test\\chaptertwo.tex"`
 
-**$fBPF** 
+``$fBPF``
+
   Lists all BibTeX-files reported by the structure parser of TeXnicCenter. The
   forward slash is used as directory separator. File names separated by a space,
   like: :file:`D:/Temp/test/xbib.bib D:/Temp/test/morebibs/morexbib.bib`
 
-**$COF**
+``$COF``
+
   Lists all files, which are currently opened in the editor. File names
   separated by a space (no quotes!), like:
   :file:`D:\\Temp\\test\\curvature3d.tex D:\\Program
   Files\\texmf\\pdftex\\latex\\config\\pdflatex.ini`
 
-**$qsrAPF**
+``$qsrAPF``
+
   Lists all files of the project as reported by the structure parser of
   TeXnicCenter. File names displayed in 8.3-format, path relative to the working
   directory, file names separated by a space, like: :file:`"curvat~1.tcp"
   "curvat~1.tps" "curvat~1.tex" "xbib.bib" "morebibs\\morexb~1.bib"
   "defini~1\\macros.tex" "chapte~1.tex"`
+
 
 Application example
 ^^^^^^^^^^^^^^^^^^^
@@ -385,5 +463,5 @@ program.
 
 * **Command**: :command:`zip.exe`
 * **Arguments**: ``a "%tm.zip" $qrAPF``
-* **Initial Directory**: ``%dm``
+* **Initial Directory**: :placeholder:`%dm`
 
