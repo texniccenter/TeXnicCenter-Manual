@@ -1,7 +1,7 @@
 Document templates
 ==================
 
-TeXnicCenter provides a powerful feature called document templates.
+TeXnicCenter provides support for custom document templates.
 
 A document template is a simple file or a wizard that generates a frame for a
 new document. When using document frames over and over again (i.e. a letter),
@@ -35,7 +35,7 @@ Example
 Lets assume that in the path options two template directories were specified:
 
 #. local directory that keeps private templates and
-#. directory on the companies network, that contains company specific templates.
+#. directory on a network drive that contains company specific templates.
 
 
 The local directory contains the following sub-directories:
@@ -43,28 +43,28 @@ The local directory contains the following sub-directories:
 * Letters 
 * University 
 
-Whereby the directory "Letters" contains the following templates:
+Whereby the directory :file:`Letters` contains the following templates:
 
 * :file:`Love Letter.tex`
 
-The company's directory contains the following sub-directories:
+Company's directory contains the following sub-directories:
 
-* General 
-* Articles 
-* Letters 
+* :file:`General`
+* :file:`Articles`
+* :file:`Letters`
 
-Whereby the directory "Letters" contains the following templates:
+Whereby the directory :file:`Letters` contains the following templates:
 
 * :file:`Order.tex`
 * :file:`Notice.tex`
 
-When creating a new project, TeXnicCenter will analyse the directories specified
-in the path options. The sub folders of the template directories listed there
-will become categories, which are represented by the tabs on the left side of
-the dialog :dialog:`Project New` and the files contained in the sub folders will
-be listed, when choosing the according tab.
+When creating a new project TeXnicCenter will analyse the directories specified
+in the path options. The sub-directories of the template directories listed
+there will become categories which are represented by the tabs on the left side
+of the :dialog:`Project New` dialog and the files contained in the
+sub-directories will be listed when the according tab has been chosen.
 
-In our example, these tabs would be available:
+In our example these tabs would be available:
 
 * Articles 
 * General 
@@ -74,7 +74,7 @@ In our example, these tabs would be available:
 The categories `Articles` and `General` would contain the templates from the
 company's directory. The category `University` would contain the templates from
 the local drive. The category `Letters` would contain the templates from the
-company's directory merged with the one's from the local drive:
+company's directory merged with templates from the local drive:
 
 * Order (:file:`company/Letters/Order.tex`) 
 * Notice (:file:`company/Letters/Order.tex`) 
@@ -89,11 +89,11 @@ Templates of this type will be marked with this icon in the dialog
 
 .. TODO: TXC logo
 
-A file based document template is a simple text file with the extension
-:file:`.tex`, placed in one of the template directories, specified on the tab
-Path options.
+A file based document template is a simple text file with the :file:`.tex` file
+extension placed in one of the template directories specified in the tab Path
+options.
 
-Such a file can contain an optional description, that will be displayed in the
+Such a file can contain an optional description that will be displayed in the
 field template description of the dialog :dialog:`Project New`, when the
 template has been selected by the user. To create such a description simply
 place a line starting with ``%description:`` followed by a space as the first
@@ -125,9 +125,8 @@ templates of this type will be marked with this icon in the dialog
 .. TODO: image
 
 A document wizard helps to create a new document by guiding step by step through
-the creation process. Document wizards are provided as Windows-DLLs (dynamic
-link library - file extension :file:`.dll`) located in the template directories,
-specified on the tab Path options.
+the creation process. Document wizards are provided as :term:`DLL` located in
+the template directories, specified on the :tab:`Path` options tab.
 
 Such wizards are provided on the TeXnicCenter homepage.
 
@@ -143,6 +142,12 @@ DLL. Some important languages which are providing the necessary features, are:
 
 To learn more about how to write document wizards, take a look at the
 TeXnicCenter homepage.
+
+.. glossary::
+
+  DLL
+    Dynamic-link library is a shared library. Dynamic-link libraries typically
+    use the :file:`.dll` file extension.
 
 .. index::
   templates; document wizard
