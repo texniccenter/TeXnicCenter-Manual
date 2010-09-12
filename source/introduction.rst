@@ -21,13 +21,11 @@ appropriate menu item and the right viewer application will be started.
 Document viewers that support TeXnicCenter's *inverse search* will allow to
 switch between the typeset document and the corresponding line in the source.
 
-TeXnicCenter's aim is to support unexperienced LaTeX users by providing most
-important LaTeX constructs via menu entries without the need to remember every
-command.  Furthermore,  the execution of the LaTeX compiler and additional tools
-like MakeIndex and BibTeX is handled automatically: Users do not have to
-remember command-line parameters. TeXnicCenter supports advanced LaTeX users as
-well by providing a powerful, fully customizable integrated development
-environment.
+TeXnicCenter's aim is to support unexperienced LaTeX users by providing
+shortcuts to important LaTeX command via menu entries.  Furthermore, the
+execution of the LaTeX compiler and tools like MakeIndex and BibTeX is handled
+automatically.  TeXnicCenter supports advanced LaTeX users as well by providing
+a powerful, fully customizable integrated development environment.
 
 .. index:: 
   inverse search
