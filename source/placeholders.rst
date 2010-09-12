@@ -1,7 +1,7 @@
 Placeholders
 ============
 
-A very powerfull feature of TeXnicCenter are placeholders. They are used on
+A very powerful feature of TeXnicCenter are placeholders. They are used on
 occasions when values or commands need to be specified that will change
 dynamically during runtime. This feature allows the user a very flexible
 configuration of TeXnicCenter because command line arguments, DDE-commands or
