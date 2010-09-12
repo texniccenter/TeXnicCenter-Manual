@@ -35,7 +35,7 @@ The meaning of the controls is:
   * Replace closing quotation marks with the string specified by *Closing
     quotation mark*
   
-  when the user types the quotation mark (") character. 
+  when the user types the quotation mark ``"`` character. 
   
 **Language**
   The choices are English and Deutsch (German).
