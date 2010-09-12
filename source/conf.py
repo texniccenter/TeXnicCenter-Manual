@@ -212,7 +212,7 @@ def parse_placeholder(env, sig, signode):
   first = sig[0]
   arg = sig
   
-  if first == '%':
+  if first == '%' or first == '$':
     signode += docutils.nodes.generated(first, first)
     
     arg = sig[1:]
