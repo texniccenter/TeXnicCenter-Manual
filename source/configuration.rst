@@ -14,6 +14,9 @@ needs of the user. The following configuration categories are available:
 * Advanced configuration provides instructions for configuration changes not
   available directly from within TeXnicCenter.
 
+.. index::
+  DVI, PDF, PS
+
 Output profiles 
 ---------------
 
@@ -45,17 +48,17 @@ questions:
 
 
 Output wizard 
------------------
+-------------
 
 The Output Wizard leads through the configuration of some basic output profiles
-step by step. If the MiKTeX distribution is installed, the Output Wizard can
-perform the configuration almost without user interaction.
+step by step. If MiKTeX or TeX Live is installed the Output Wizard can configure
+the profiles almost without user interaction.
 
 Invoking the output wizard 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After TeXnicCenter has started, it checks to see whether output profiles are
-already defined. If this is not the case, TeXnicCenter will then start the
+After TeXnicCenter has started it checks to see whether output profiles are
+already defined. If this is not the case TeXnicCenter will then start the
 Output Wizard automatically.
 
 To start the Output Wizard manually, please select the menu item
@@ -65,11 +68,11 @@ To start the Output Wizard manually, please select the menu item
 Using the output wizard 
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-At first the Wizard will look for an installed MiKTeX distribution. If MiKTeX is
-found on the system, the Wizard asks for permission to configure TeXnicCenter
-accordingly or to use another distribution.
+At first the Wizard will look for an installed LaTeX distribution. If either
+MiKTeX or TeX Live is found the Wizard asks for permission to configure
+TeXnicCenter accordingly or to use another distribution.
 
-To configure TeXnicCenter to use MiKTeX, the Wizard will perform the following
+To configure TeXnicCenter to use MiKTeX the wizard will perform the following
 steps:
 
 1. It will look for the TeX compiler. If no compiler can be found, the path to
@@ -156,7 +159,7 @@ on the three tabs.
 (La)TeX tab
 ^^^^^^^^^^^
 
-The tab '(La)TeX' allows to define:
+The :tab:`(La)TeX` tab allows to define:
 
 * which LaTeX or TeX compiler to use; 
 * which BibTeX compiler to use; 
@@ -180,7 +183,7 @@ The meaning of the different controls:
   for dynamic arguments. 
 
 **Do not use BibTeX in this profile**
-  Choose this option, to prevent BibTeX from being started, when using this
+  Choose this option to prevent BibTeX from being started, when using this
   profile. If this option is not checked, BibTeX will start or not depending on
   the project settings. 
 
@@ -201,7 +204,7 @@ The meaning of the different controls:
 
 **Command line arguments to pass to the compiler**
   Specify the command line arguments to pass to the MakeIndex compiler. Use
-  place holders for dynamic arguments. 
+  placeholders for dynamic arguments. 
 
 
 Postprocessor tab
@@ -256,13 +259,13 @@ Using input and output redirection allow to use tools, which do not interpret
 command line arguments, but retrieve their data input from the tool's input
 device and/or write their data output to the tools output device.
 
-An example of such a tool is :program:`tth`, which is used to convert LaTeX
+An example of such a tool is :program:`tth` which is used to convert LaTeX
 documents into HTML documents. To start up :program:`tth` use ::
 
   tth < file.tex > file.html
 
-When using this tool with TeXnicCenter, use :file:`file.tex` as input and
-:file:`file.html` as output redirection. The command line of this tool has to be
+When using this tool with TeXnicCenter use :file:`file.tex` as input and
+:file:`file.html` as output redirection. The command-line of this tool has to be
 empty.
 
 
@@ -309,7 +312,8 @@ The meanings of the different controls:
   here to close the file in the viewer before the compiler is executed.  This
   command can be either a command-line option or a DDE-command. 
 
-All the commands can be either command-line options or DDE commands. Command-line options will be passed to the application during its start.
+All the commands can be either command-line options or DDE commands.
+Command-line options will be passed to the application during its start.
 
 The meanings of the fields for a command are:
 
@@ -320,18 +324,18 @@ The meanings of the fields for a command are:
   Choose to specify a DDE command. 
 
 **Command**
-  Enter the command line to pass to the executable here, if the option 'Command
-  line argument' was chosen or enter the DDE command to send to the viewer, if
-  the option 'DDE command' was choosen.  You can use place holders to specify
+  Enter the command line to pass to the executable here, if the option **Command
+  line argument** was chosen or enter the DDE command to send to the viewer, if
+  the option **DDE command** was choosen.  You can use place holders to specify
   dynamic arguments.
 
-**Server** (only available for 'DDE command') 
+**Server** (only available for *DDE command*) 
   Specify the server name used to connect to the DDE server (the viewer). For
   more information please refer to the manual of the viewer.  
   
-**Topic** (only available for 'DDE command') 
+**Topic** (only available for *DDE command*) 
   Specify the DDE topic the DDE command belongs to.  For more information please
   refer to the manual of the viewer.  Most applications are expecting the topic
-  "System" here. 
+  *System* here. 
 
 

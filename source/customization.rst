@@ -10,7 +10,7 @@ Customizing commands
 --------------------
 
 To customize commands which are available on several toolbars and menus open the
-dialog :dialog:`Customization` and select the tab :tab:`Commands`.
+:dialog:`Customization` dialog and select the :tab:`Commands` tab.
 
 .. figure:: images/customizecommands.*
 
@@ -89,8 +89,8 @@ the :control:`Arguments`, this feature allows you to integrate external tools
 like spell checkers and other tools which should work with the current document
 or currently selected word or elements like that.
 
-To customize the menu :control:`Tools`, open the dialog Customization and select
-the tab :control:`Tools`.
+To customize the menu :control:`Tools`, open the :dialog:`Customization` dialog
+and select the tab :control:`Tools`.
 
 .. figure:: images/customizetools.*
 
@@ -230,8 +230,8 @@ Customizing the look and feel
 TeXnicCenter allows you to widely customize the look and feel of the graphical
 user interface including downloadable skins.
 
-To customize the look & feel, open the dialog Ccustomization and select the tab
-:tab:`Options`.
+To customize the look & feel open the :dialog:`Customization` dialog and select
+the :tab:`Options` tab.
 
 .. figure:: images/customizeoptions.*
 
@@ -241,7 +241,7 @@ The controls of the page are having the following meanings:
 
 **Show ScreenTips on toolbars**
   If this option is enabled, a small yellow window (ScreenTips) with a short
-  description will appear, when you move the mouse cursor above a toolbar icon
+  description will appear when you move the mouse cursor above a toolbar icon
   and wait for a moment. 
 
 **Show shortcut keys in ScreenTips**
