@@ -4,28 +4,25 @@ Introduction
 What is TeXnicCenter?
 ---------------------
 
-TeXnicCenter is an integrated development environment (IDE) that provides
-features for creating, editing and compiling LaTeX documents on Microsoft
-Windows 2000, XP, Vista and Windows 7.  TeXnicCenter's editor recognizes LaTeX
-commands and highlights them making it easier to understand the structure of a
-document.
+TeXnicCenter is an integrated development environment (IDE) used to create, edit
+and compile LaTeX documents on Microsoft Windows 2000, XP, Vista and Windows 7.
+It includes a code editor with syntax highlighting and provides document
+structure visualization.
 
 The compilation process that converts LaTeX documents into a typeset output can
 be started by simply choosing a menu item or clicking a toolbar button. LaTeX
-compiler diagnostics are analyzed and the result is displayed in a separate
-window. This allows to easily navigate through the error, warning, or bad box
-messages by clicking an appropriate toolbar button
+compiler diagnostics are displayed in a separate window allowing to navigate
+through the error, warning, or bad box messages.
 
-Viewing the typeset document is easy with TeXnicCenter. Just choose the
-appropriate menu item and the right viewer application will be started.
-Document viewers that support TeXnicCenter's *inverse search* will allow to
-switch between the typeset document and the corresponding line in the source.
+A viewer that displays the typeset document can be started using a single click.
+Viewers that support TeXnicCenter's *inverse search* can be used to switch
+between the typeset document and the corresponding line in the source.
 
 TeXnicCenter's aim is to support unexperienced LaTeX users by providing
-shortcuts to important LaTeX command via menu entries.  Furthermore, the
-execution of the LaTeX compiler and tools like MakeIndex and BibTeX is handled
-automatically.  TeXnicCenter supports advanced LaTeX users as well by providing
-a powerful, fully customizable integrated development environment.
+shortcuts to important LaTeX commands via menu entries.  Furthermore, the
+execution of the LaTeX compiler and tools such as MakeIndex and BibTeX is
+handled automatically.  TeXnicCenter supports advanced LaTeX users as well by
+providing a powerful, fully customizable integrated development environment.
 
 .. index:: 
   inverse search
@@ -46,4 +43,30 @@ viewer should be installed as well. Recommended PDF viewer is `Sumatra PDF
   viewer, viewer; PDF
   Sumatra PDF
   MiKTeX, TeX Live, distribution
+
+
+Conventions used in this manual
+-------------------------------
+
+The following conventions are used in this manual.
+
+**Cancel**
+  
+  Indicates a button, label or user interface option.
+
+:file:`thesis.tex`
+
+  Indicates a filename or directory.
+
+:kbd:`Ctrl+C`
+
+  Indicates a shortcut or a combination of keys to press.
+
+.. note::
+
+  This is a note.
+
+.. warning::
+  
+  An important note that shouldn't be ignored.
 
