@@ -1,7 +1,7 @@
 Command-line arguments
 ======================
 
-TeXnicCenter supports the following command line syntax:
+TeXnicCenter supports the following command-line options:
 
 :parameter:`filename`
   Start up and open the specified file. If the file is a project file, the
@@ -35,13 +35,14 @@ TeXnicCenter supports the following command line syntax:
     DDE-commands directly to the running instance or use the :command:`/ddecmd`
     switch.
 
-  * Use single quotes (') inside the DDE-commands instead of double quotes (''). 
+  * Use single quotes ``'`` inside the DDE-commands instead of double quotes
+    ``"``. 
 
 Open a file in TeXnicCenter using another application or the command line
 -------------------------------------------------------------------------
 
 The DVI-viewer YAP shipped together with the MiKTeX distribution supports a
-feature called `inverse search`. If a DVI file opened in the viewer has been
+feature called *inverse search*. If a DVI file opened in the viewer has been
 generated using source specials, a double click on a paragraph in the viewer
 will place the LaTeX editor caret in the appropriate line of the source
 paragraph.
@@ -49,7 +50,7 @@ paragraph.
 To do so, your favorite LaTeX editor has to support the feature to go to a line
 and a source file, specified on the command line.
 
-TeXnicCenter supports these features with the command line arguments listed
+TeXnicCenter supports these features with the command-line arguments listed
 here.
 
 Multiple instance support 
