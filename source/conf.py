@@ -221,6 +221,27 @@ def parse_placeholder(env, sig, signode):
 
   return sig
 
+def parse_cmd(evn, sig, signode):
+  first = sig[0]
+
+  if first == '/':
+    w = sig.split()
+
+    option = w[0]
+    name = option[1:]
+    
+    signode += addnodes.desc_name(option, option)
+
+    for arg in w[1:]:
+      arg = ' ' + arg
+      signode += docutils.nodes.emphasis(arg, arg)
+
+    sig = option
+  else:
+    signode += docutils.nodes.emphasis(sig, sig)
+
+  return sig
+
 def setup(app):
   app.add_crossref_type('tab', 'tab',
       ref_nodeclass = docutils.nodes.emphasis)
@@ -228,7 +249,8 @@ def setup(app):
       ref_nodeclass = docutils.nodes.emphasis)
   app.add_generic_role('button', docutils.nodes.emphasis)
   app.add_generic_role('control', docutils.nodes.emphasis)
-  app.add_generic_role('parameter', docutils.nodes.emphasis)
+  app.add_object_type('cmd', 'cmd', 'pair: %s; command-line argument',
+      parse_cmd)
   app.add_object_type('placeholder', 'placeholder', 'pair: %s; placeholder',
       parse_placeholder)
 
