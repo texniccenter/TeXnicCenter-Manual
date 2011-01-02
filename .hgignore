@@ -2,3 +2,5 @@ glob:build
 glob:*.*~
 glob:*.swp
 glob:*.orig
+glob:Build.cmd
+glob:source/SciTE.properties
