@@ -6,6 +6,8 @@ interface (GUI). To customize the user interface of TeXnicCenter select in the
 :menuselection:`Tools --> Customize...` This will open the
 :dialog:`Customization` dialog.
 
+.. _customization-commands:
+
 Customizing commands
 --------------------
 
@@ -37,6 +39,8 @@ The controls of the page are having the following meaning:
 **Description**
   A short description of the currently selected command in the list :control:`Commands`. 
 
+
+.. _customization-toolbars:
 
 Customizing toolbars
 --------------------
@@ -80,6 +84,8 @@ The meanings of the controls are:
   displayed with labels below the icons.
 
 
+.. _customization-tools:
+
 Customizing the tools menu
 --------------------------
 
@@ -117,6 +123,8 @@ The meanings of the controls are:
   Specify the working directory for the application to start. You can use
   placeholders for dynamic directories. 
 
+
+.. _customization-shortcuts:
 
 Customizing keyboard shortcuts
 ------------------------------
@@ -169,9 +177,10 @@ The meanings of the controls are:
   shortcuts since the installation of TeXnicCenter will be lost. 
 
 
+.. _customization-menu:
+
 Customizing menus
 -----------------
-
 
 TeXnicCenter allows you to customize the main and the context menus.  To
 customize the menus, open the dialog Customization and select the tab
@@ -223,6 +232,8 @@ Context Menus
   Resets the selected context menu. All the changes that have been made to that
   context menu since the installation of TeXnicCenter will be lost. 
 
+
+.. _customization-look:
 
 Customizing the look and feel
 -----------------------------

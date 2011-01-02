@@ -17,6 +17,8 @@ Contents:
   introduction
   configuration
   
+  editor
+  
   projects
   doctemplates
 
