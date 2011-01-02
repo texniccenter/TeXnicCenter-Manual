@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to TeXnicCenter's documentation!
-========================================
+Welcome to the documentation of TeXnicCenter
+=============================================
 
 .. Please read the :ref:`copyright` and the license carefully before using 
   TeXnicCenter.

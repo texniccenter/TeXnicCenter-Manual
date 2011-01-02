@@ -15,7 +15,7 @@ compiler diagnostics are displayed in a separate window allowing to navigate
 through the error, warning, or bad box messages.
 
 A viewer that displays the typeset document can be started using a single click.
-Viewers that support TeXnicCenter's *inverse search* can be used to switch
+Viewers that support TeXnicCenter's *forward/inverse search* can be used to switch
 between the typeset document and the corresponding line in the source.
 
 TeXnicCenter's aim is to support unexperienced LaTeX users by providing
@@ -26,18 +26,19 @@ providing a powerful, fully customizable integrated development environment.
 
 .. index:: 
   inverse search
+  forward search
   BibTeX, LaTeX, MakeIndex
   IDE
 
 Requirements
 ------------
 
-To typeset LaTeX documents TeXnicCenter requires a LaTeX distribution to be
+To typeset LaTeX documents, TeXnicCenter requires a LaTeX distribution to be
 installed. Major LaTeX distributions supported by TeXnicCetner are `MiKTeX
 <http://miktex.org/>`_ and `TeX Live
-<http://www.tug.org/texlive/windows.html>`_. To view typeset PDF documents a PDF
-viewer should be installed as well. Recommended PDF viewer is `Sumatra PDF
-<http://blog.kowalczyk.info/software/sumatrapdf>`_.
+<http://www.tug.org/texlive/windows.html>`_. To view typeset PDF documents, a PDF
+viewer should be installed as well. The PDF viewer `Sumatra PDF
+<http://blog.kowalczyk.info/software/sumatrapdf>`_ is recommended since it supports forward/inverse search.
 
 .. index:: 
   viewer, viewer; PDF
