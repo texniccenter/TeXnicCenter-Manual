@@ -19,6 +19,7 @@ if %idUser% == 2 (set UserName="sergiudotenco")
 
 
 REM ~ Create a list for review
+echo.
 rsync --verbose --rsh=ssh --checksum --archive --recursive --dry-run --exclude=/_sources/** --exclude=/.buildinfo --exclude=/objects.inv ./ %UserName%,texniccenter@web.sourceforge.net:htdocs/ | grep -v ".*/$"
 
 echo.
