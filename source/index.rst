@@ -6,6 +6,10 @@
 Welcome to the documentation of TeXnicCenter
 =============================================
 
+This documentation refers to the latest version of TeXnicCenter.
+
+The homepage of TeXnicCenter can be found at http://www.texniccenter.org/
+
 .. Please read the :ref:`copyright` and the license carefully before using 
   TeXnicCenter.
 
