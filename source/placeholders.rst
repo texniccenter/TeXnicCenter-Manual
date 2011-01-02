@@ -14,11 +14,11 @@ name with the current value, when needed.
 
 There a two types of placeholders in TeXnicCenter:
 
-**Placeholders for single files**
+:ref:`placeholder-single`
   This type of placeholders is often used to define command-line arguments and
   DDE-commands. 
 
-**Placeholders for sets of files**
+:ref:`placeholder-sets`
   This kind of placeholders are used to deal with more than one file at a time. 
 
 .. index::
@@ -27,6 +27,7 @@ There a two types of placeholders in TeXnicCenter:
 
 .. highlight:: text
 
+.. _placeholder-single:
 
 Placeholders for single files 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -96,8 +97,9 @@ placeholders will be replaced with paths matching the old 8.3 path convention.
 To get a percent sign in the resulting string you have to use the placeholder
 :placeholder:`%%` which will always be replaced by ``%``.
 
+
 Placeholders referring to project's main file
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""""""""""""""""
 
 The following placeholders are used as a reference to a project's main file. If
 the :menuselection:`Build --> Current File...` command is used, these
@@ -154,7 +156,7 @@ current project's main file is :file:`C:\\My Documents\\TxcTest\\JustATest.tex`.
 
 
 Placeholders with slashes instead of backslashes
-""""""""""""""""""""""""""""""""""""""""""""""""
+''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %Pm
 
@@ -176,7 +178,7 @@ Placeholders with slashes instead of backslashes
 
 
 Placeholders for 8.3 path notation
-""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %spm
 
@@ -216,7 +218,7 @@ Placeholders for 8.3 path notation
 
 
 Placeholders for 8.3 path notation with slashes instead of backslashes 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %sPm
 
@@ -238,7 +240,7 @@ Placeholders for 8.3 path notation with slashes instead of backslashes
 
 
 Placeholders referring to current file 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""""""""""
 
 The following placeholders are used to reference the current file. The current
 file is the file opened in the editor, i.e it has the input focus. If no file is
@@ -296,7 +298,7 @@ Documents\\TxcTest\\JustATest.tex`.
 
 
 Placeholders with slashes instead of backslashes 
-""""""""""""""""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %Pc
 
@@ -318,7 +320,7 @@ Placeholders with slashes instead of backslashes
 
 
 Placeholders for 8.3 path notation
-""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %spc
 
@@ -358,7 +360,7 @@ Placeholders for 8.3 path notation
 
 
 Placeholders for 8.3 path notation with slashes instead of backslashes
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 .. placeholder:: %sPc
 
@@ -381,7 +383,7 @@ Placeholders for 8.3 path notation with slashes instead of backslashes
 
 
 Placeholders referrening to a selection in the current file 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 .. placeholder:: %l
 
@@ -407,8 +409,11 @@ Other placeholders
   Will be replaced by the string ``$``. 
 
 
+
+.. _placeholder-sets:
+
 Placeholders for sets of files
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Placeholders can be used for handling sets of files.
 
@@ -519,6 +524,9 @@ program (like WinZip or WinRAR) is required. Adjust path and arguments for that
 program.
 
 * **Command**: :command:`zip.exe`
-* **Arguments**: ``a "%tm.zip" $qrAPF``
+* **Arguments**: :samp:`a "{%tm}.zip" {$qrAPF}`
 * **Initial Directory**: :placeholder:`%dm`
 
+.. Alternative ways to write the arguments above:
+    * **Arguments**: ``a "%tm.zip" $qrAPF``
+    * **Arguments**: ``a "``:placeholder:`%tm`\ ``.zip" $qr``:placeholder:`APF`
