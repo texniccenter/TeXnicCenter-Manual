@@ -11,11 +11,16 @@ project <http://extensions.services.openoffice.org/dictionaries>`_.
 Installing dictionaries
 -----------------------
 
-Each Hunspell dictionary consist of two main files. Copy both the affix file,
-``language-dialect.aff``, and the dictionary file, ``language-dialect.dic`` into
-the ``Language`` directory of your TeXnicCenter installation. The new dictionary
-will appear in the :tab:`Spelling` option page immediately, but your new
-selection will not take affect until after you restarted TeXnicCenter.
+TeXnicCenter uses the Hunspell spell checker whose dictionaries consist of two
+files: an affix and a dictionary file. Single file dictionaries with the
+``.oxt`` file extension have to be decompressed first using a file archiver
+utility such as `Z-Zip <http://www.7-zip.org>`_. 
+
+Both the affix file ``language-dialect.aff`` and the dictionary file
+``language-dialect.dic`` are copied into the ``Language`` directory in
+TeXnicCenter's installation folder.  The new dictionary will appear in the
+:tab:`Spelling` option page immediately, but your new selection will not take
+affect until TeXnicCenter has been restarted.
 
 Personal dictionaries format
 ----------------------------
