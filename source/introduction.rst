@@ -5,9 +5,9 @@ What is TeXnicCenter?
 ---------------------
 
 TeXnicCenter is an integrated development environment (IDE) used to create, edit
-and compile LaTeX documents on Microsoft Windows 2000, XP, Vista and Windows 7.
-It includes a code editor with syntax highlighting and provides document
-structure visualization.
+and compile LaTeX documents on Microsoft Windows XP, Vista and Windows 7.  It
+includes a code editor with syntax highlighting and provides document structure
+visualization.
 
 The compilation process that converts LaTeX documents into a typeset output can
 be started by simply choosing a menu item or clicking a toolbar button. LaTeX
