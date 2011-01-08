@@ -14,7 +14,7 @@ Installing dictionaries
 TeXnicCenter uses the Hunspell spell checker whose dictionaries consist of two
 files: an affix and a dictionary file. Single file dictionaries with the
 ``.oxt`` file extension have to be decompressed first using a file archiver
-utility such as `Z-Zip <http://www.7-zip.org>`_. 
+utility such as `7-Zip <http://www.7-zip.org>`_. 
 
 Both the affix file ``language-dialect.aff`` and the dictionary file
 ``language-dialect.dic`` are copied into the ``Language`` directory in
