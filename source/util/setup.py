@@ -39,12 +39,12 @@ html_keys = {
 }
 
 plain_keys = {
-  'enter': _(u'Enter'),
-  'backspace': _(u'Backspace'),
-  'tab': _(u'Tab'),
-  'shift': _(u'Shift'),
-  'capslock': _(u'Caps Lock'),
-  'cmd': _(u'Command')
+  'enter': _('Enter'),
+  'backspace': _('Backspace'),
+  'tab': _('Tab'),
+  'shift': _('Shift'),
+  'capslock': _('Caps Lock'),
+  'cmd': _('Command')
 }
 
 html_shortcut_sep = ' + '

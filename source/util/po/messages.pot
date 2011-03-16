@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-12 21:52+Mitteleuropäische Zeit\n"
+"POT-Creation-Date: 2011-03-16 22:02+Mitteleuropäische Zeit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,31 +15,31 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: setup.py:29 setup.py:38
+#: setup.py:33 setup.py:42
 msgid "Enter"
 msgstr ""
 
-#: setup.py:30 setup.py:39
+#: setup.py:34 setup.py:43
 msgid "Backspace"
 msgstr ""
 
-#: setup.py:31 setup.py:40
+#: setup.py:35 setup.py:44
 msgid "Tab"
 msgstr ""
 
-#: setup.py:32 setup.py:41
+#: setup.py:36 setup.py:45
 msgid "Shift"
 msgstr ""
 
-#: setup.py:33 setup.py:42
+#: setup.py:37 setup.py:46
 msgid "Caps Lock"
 msgstr ""
 
-#: setup.py:43
+#: setup.py:47
 msgid "Command"
 msgstr ""
 
-#: setup.py:141
+#: setup.py:145
 msgid "%s (CMake variable)"
 msgstr ""
 

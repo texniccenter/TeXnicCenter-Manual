@@ -44,13 +44,13 @@ precedence over built-in shortcuts.
     * - Restore text size to normal
       - :shortcut:`Ctrl+Keypad /`
     * - Cycle through recent files
-      - :shortcut:`Ctrl+Tab`
+      - :shortcut:`Ctrl+tab`
     * - Cycle through recent files in reverse order
-      - :shortcut:`Ctrl+shift+Tab`
+      - :shortcut:`Ctrl+shift+tab`
     * - Indent block
-      - :shortcut:`Tab`
+      - :shortcut:`tab`
     * - Dedent block
-      - :shortcut:`shift+Tab`
+      - :shortcut:`shift+tab`
     * - Delete to start of word
       - :shortcut:`Ctrl+Backspace`
     * - Delete to end of word
