@@ -1,0 +1,72 @@
+% Copyright (c) 2010 Sergiu Dotenco
+%
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+\usepackage{tikz}
+
+\newcommand{\tomenu}{~\textcolor{black!60}{$\filledtriangleright$}\,}
+
+\providecolor{keystrokeforeground}{RGB}{238,238,238}
+\providecolor{keystrokebackgroundright}{RGB}{170,170,170}
+\providecolor{keystrokebackgroundbottom}{RGB}{136,136,136}
+\providecolor{keystrokebackgroundtop}{RGB}{204,204,204}
+\providecolor{keystrokebackgroundleft}{RGB}{188,188,188}
+
+\newcommand\keystrokefont{\normalfont\sffamily\footnotesize}
+
+\newdimen\keystrokebig\keystrokebig=0.45ex
+\newdimen\keystrokesmall\keystrokesmall=0.2ex
+\newdimen\keystrokeinnerysep\keystrokeinnerysep=0.3ex
+\newdimen\keystrokeinnerxsep\keystrokeinnerxsep=0.35ex
+\newdimen\keystroketextdp\keystroketextdp=.6ex
+\newdimen\keystrokeminwidth\keystrokeminwidth=1em
+\advance\keystrokeminwidth by .333ex
+\newdimen\keystrokeminheight\keystrokeminheight=.75em
+
+\newcommand{\keystrokebeforeskip}{\hspace{\keystrokebig}}
+\newcommand{\keystrokeafterskip}{\,}
+
+\newcommand\keystroke[1]{%
+  \keystrokebeforeskip%
+  \begin{tikzpicture}[baseline=(F.base)]
+    \node [fill=keystrokeforeground, draw=keystrokeforeground,
+           outer sep=0pt, inner ysep=0pt,
+           minimum width=\keystrokeminwidth, text height=\keystrokeminheight,
+           inner xsep=\keystrokeinnerxsep, text depth=\keystroketextdp]
+          (F) [font=\keystrokefont] {#1};
+    % right
+    \fill[keystrokebackgroundright]
+      (F.south east) -- (F.north east) -- +(\keystrokebig, \keystrokesmall) --
+      ([xshift=\keystrokebig,yshift=-\keystrokebig]F.south east) -- cycle;
+    % bottom
+    \fill[keystrokebackgroundbottom]
+      (F.south west) -- (F.south east) -- +(\keystrokebig, -\keystrokebig) --
+      ([xshift=-\keystrokesmall,yshift=-\keystrokebig]F.south west) -- cycle;
+    % left
+    \fill[keystrokebackgroundleft]
+      (F.south west) -- (F.north west) --
+      +(-\keystrokesmall, \keystrokesmall) --
+      ([xshift=-\keystrokesmall,yshift=-\keystrokebig]F.south west) -- cycle;
+    % top
+    \fill[keystrokebackgroundtop]
+      (F.north west) -- (F.north east) -- +(\keystrokebig, \keystrokesmall) --
+      ([xshift=-\keystrokesmall,yshift=\keystrokesmall]F.north west) -- cycle;
+  \end{tikzpicture}%
+  \keystrokeafterskip%
+}

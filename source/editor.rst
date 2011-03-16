@@ -38,105 +38,105 @@ precedence over built-in shortcuts.
     * - Command
       - Keyboard shortcut
     * - Magnify text size
-      - :kbd:`Ctrl+Keypad+`
+      - :shortcut:`Ctrl+Keypad +`
     * - Reduce text size
-      - :kbd:`Ctrl+Keypad-`
+      - :shortcut:`Ctrl+Keypad -`
     * - Restore text size to normal
-      - :kbd:`Ctrl+Keypad/`
+      - :shortcut:`Ctrl+Keypad /`
     * - Cycle through recent files
-      - :kbd:`Ctrl+Tab`
+      - :shortcut:`Ctrl+Tab`
     * - Cycle through recent files in reverse order
-      - :kbd:`Ctrl+Shift+Tab`
+      - :shortcut:`Ctrl+shift+Tab`
     * - Indent block
-      - :kbd:`Tab`
+      - :shortcut:`Tab`
     * - Dedent block
-      - :kbd:`Shift+Tab`
+      - :shortcut:`shift+Tab`
     * - Delete to start of word
-      - :kbd:`Ctrl+Backspace`
+      - :shortcut:`Ctrl+Backspace`
     * - Delete to end of word
-      - :kbd:`Ctrl+Delete`
+      - :shortcut:`Ctrl+Delete`
     * - Delete to start of line
-      - :kbd:`Ctrl+Shift+Backspace`
+      - :shortcut:`Ctrl+shift+Backspace`
     * - Delete to end of line
-      - :kbd:`Ctrl+Shift+Delete`
+      - :shortcut:`Ctrl+shift+Delete`
     * - Go to start of document
-      - :kbd:`Ctrl+Home`
+      - :shortcut:`Ctrl+Home`
     * - Extend selection to start of document
-      - :kbd:`Ctrl+Shift+Home`
+      - :shortcut:`Ctrl+shift+Home`
     * - Go to start of display line
-      - :kbd:`Home` (pressed once) or :kbd:`Alt+Home`
+      - :shortcut:`Home` (pressed once) or :shortcut:`Alt+Home`
     * - Go to start of line
-      - :kbd:`Home` (pressed twice)
+      - :shortcut:`Home` (pressed twice)
     * - Go to end of document
-      - :kbd:`Ctrl+End`
+      - :shortcut:`Ctrl+End`
     * - Extend selection to end of document
-      - :kbd:`Ctrl+Shift+End`
+      - :shortcut:`Ctrl+shift+End`
     * - Go to end of display line
-      - :kbd:`End` (pressed once) or :kbd:`Alt+End`
+      - :shortcut:`End` (pressed once) or :shortcut:`Alt+End`
     * - Go to end of line
-      - :kbd:`End` (pressed twice)
+      - :shortcut:`End` (pressed twice)
     * - Create or delete a bookmark
-      - :kbd:`Ctrl+F2`
+      - :shortcut:`Ctrl+F2`
     * - Go to next bookmark
-      - :kbd:`F2`
+      - :shortcut:`F2`
     * - Find selection
-      - :kbd:`Ctrl+F3`
+      - :shortcut:`Ctrl+F3`
     * - Find selection backwards
-      - :kbd:`Ctrl+Shift+F3`
+      - :shortcut:`Ctrl+shift+F3`
     * - Scroll up
-      - :kbd:`Ctrl+Up`
+      - :shortcut:`Ctrl+Up`
     * - Scroll down
-      - :kbd:`Ctrl+Down`
+      - :shortcut:`Ctrl+Down`
     * - Line cut
-      - :kbd:`Ctrl+L`
+      - :shortcut:`Ctrl+L`
     * - Line copy
-      - :kbd:`Ctrl+Shift+T`
+      - :shortcut:`Ctrl+shift+T`
     * - Line delete
-      - :kbd:`Ctrl+Shift+L`
+      - :shortcut:`Ctrl+shift+L`
     * - Line transpose with previous
-      - :kbd:`Ctrl+T`
+      - :shortcut:`Ctrl+T`
     * - Selection duplicate
-      - :kbd:`Ctrl+D`
-    * - Previous paragraph. Shift extends selection
-      - :kbd:`Ctrl+[`
-    * - Next paragraph. Shift extends selection
-      - :kbd:`Ctrl+]`
+      - :shortcut:`Ctrl+D`
+    * - Previous paragraph. shift extends selection
+      - :shortcut:`Ctrl+[`
+    * - Next paragraph. shift extends selection
+      - :shortcut:`Ctrl+]`
     * - Select paragraph. Press several times to extended selection
-      - :kbd:`Ctrl+P`
+      - :shortcut:`Ctrl+P`
     * - Select brace block. Press several times to extended selection
-      - :kbd:`Ctrl+M`
-    * - Previous word. Shift extends selection
-      - :kbd:`Ctrl+Left`
-    * - Next word. Shift extends selection
-      - :kbd:`Ctrl+Right`
+      - :shortcut:`Ctrl+M`
+    * - Previous word. shift extends selection
+      - :shortcut:`Ctrl+Left`
+    * - Next word. shift extends selection
+      - :shortcut:`Ctrl+Right`
     * - Rectangular block selection
-      - :kbd:`Alt+Shift+Movement`
+      - :shortcut:`Alt+shift+|Movement|`
     * - Extend rectangular selection to start of line
-      - :kbd:`Alt+Shift+Home`
+      - :shortcut:`Alt+shift+Home`
     * - Extend rectangular selection to end of line
-      - :kbd:`Alt+Shift+End`
+      - :shortcut:`Alt+shift+End`
     * - Abort selection (select nothing)
-      - :kbd:`Esc`
+      - :shortcut:`Esc`
 
 .. Does not work or we do not have this in TXC:
     * - Expand or contract a fold point
-      - :kbd:`Ctrl+Keypad*`
+      - :shortcut:`Ctrl+Keypad*`
     * - Select to next bookmark
-      - :kbd:`Alt+F2`
+      - :shortcut:`Alt+F2`
     * - Find matching preprocessor conditional, skipping nested ones
-      - :kbd:`Ctrl+K`
+      - :shortcut:`Ctrl+K`
     * - Select to matching preprocessor conditional
-      - :kbd:`Ctrl+Shift+K`
+      - :shortcut:`Ctrl+shift+K`
     * - Find matching preprocessor conditional backwards, skipping nested ones
-      - :kbd:`Ctrl+J`
+      - :shortcut:`Ctrl+J`
     * - Select to matching preprocessor conditional backwards
-      - :kbd:`Ctrl+Shift+J`
+      - :shortcut:`Ctrl+shift+J`
 
 .. Do not advocate this, since it doesn't make sense for LaTeX:
-    * - Previous word part. Shift extends selection
-      - :kbd:`Ctrl+/`
-    * - Next word part. Shift extends selection
-      - :kbd:`Ctrl+\\`
+    * - Previous word part. shift extends selection
+      - :shortcut:`Ctrl+/`
+    * - Next word part. shift extends selection
+      - :shortcut:`Ctrl+\\`
 
 
 Editor mouse shortcuts
@@ -154,26 +154,26 @@ The following table lists the editor commands that are accessible via the mouse.
     * - Command
       - Mouse shortcut
     * - Magnify text size
-      - :kbd:`Ctrl+MouseWheelUp`
+      - :shortcut:`Ctrl+|Mouse Wheel Up|`
     * - Reduce text size
-      - :kbd:`Ctrl+MouseWheelDown`
+      - :shortcut:`Ctrl+|Mouse Wheel Down|`
     * - Create or delete a bookmark
       - Click on the left-most margin.
     * - Expand or contract a fold point
       - Click on the fold margin.
     * - Scroll up
-      - :kbd:`MouseWheelUp`
+      - :shortcut:`|Mouse Wheel Up|`
     * - Scroll down
-      - :kbd:`MouseWheelDown`
+      - :shortcut:`|Mouse Wheel Down|`
     * - Extend regular selection
-      - :kbd:`Shift+LeftClick`
+      - :shortcut:`shift+|Left Click|`
     * - Rectangular block selection
-      - :kbd:`Alt+LeftMouseButton`
+      - :shortcut:`Alt+|Left Mouse Button|`
     * - Multiple selections
-      - :kbd:`Ctrl+LeftMouseButton`
+      - :shortcut:`Ctrl+|Left Mouse Button|`
     * - Abort selection (select nothing)
-      - :kbd:`LeftClick`
+      - Left Click
     * - Move text
       - Drag&Drop selected text
     * - Copy text
-      - Drag&Drop selected text while holding :kbd:`Ctrl`
+      - Drag&Drop selected text while holding :shortcut:`Ctrl`

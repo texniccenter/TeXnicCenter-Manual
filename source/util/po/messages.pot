@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-03-12 21:52+Mitteleuropäische Zeit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: setup.py:29 setup.py:38
+msgid "Enter"
+msgstr ""
+
+#: setup.py:30 setup.py:39
+msgid "Backspace"
+msgstr ""
+
+#: setup.py:31 setup.py:40
+msgid "Tab"
+msgstr ""
+
+#: setup.py:32 setup.py:41
+msgid "Shift"
+msgstr ""
+
+#: setup.py:33 setup.py:42
+msgid "Caps Lock"
+msgstr ""
+
+#: setup.py:43
+msgid "Command"
+msgstr ""
+
+#: setup.py:141
+msgid "%s (CMake variable)"
+msgstr ""
+
