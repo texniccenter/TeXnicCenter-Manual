@@ -60,7 +60,7 @@ The following conventions are used in this manual.
 
   Indicates a filename or directory.
 
-:kbd:`Ctrl+C`
+:shortcut:`Ctrl+C`
 
   Indicates a shortcut or a combination of keys to press.
 
