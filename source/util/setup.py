@@ -50,8 +50,7 @@ plain_keys = {
 html_shortcut_sep = ' + '
 latex_shortcut_sep = '+'
 escape = '|'
-latex_keystroke = open(os.path.dirname(__file__)+'/keystroke.tex', 'r').read()
-latex_preamble = latex_keystroke
+    
 
 def extract_nodes(text, keys):
   tokens = filter(None, re.split('\+(\+|[^\+]*\+$|[^\+]+)', text))
@@ -141,10 +140,10 @@ def shortcut_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
 
 
 def setup(app):
-  app.add_stylesheet('keypress.css')
-  app.add_object_type('cmakevar', 'cmakevar', _('%s (CMake variable)'),
-      parse_cmakevar)
-  
-  app.add_node(shortcut, latex=(visit_shortcut_latex, None),
-      html=(visit_shortcut_html, None))
-  app.add_role('shortcut', shortcut_role)
+    app.add_object_type('cmakevar', 'cmakevar', _('%s (CMake variable)'), parse_cmakevar)
+
+    app.add_css_file('keypress.css')
+    app.add_node(shortcut, latex=(visit_shortcut_latex, None), html=(visit_shortcut_html, None))
+    app.add_role('shortcut', shortcut_role)
+    latex_keystroke = open(os.path.dirname(__file__)+'/keystroke.tex', 'r').read()
+    return latex_keystroke

@@ -71,6 +71,8 @@ create the project file and the project's main file, based on the chosen
 template.  Afterwards the newly created project will be opened in TeXnicCenter.
 
 
+.. dialog:: Project properties
+
 Modifying project settings
 --------------------------
 

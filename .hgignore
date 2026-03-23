@@ -1,7 +1,0 @@
-glob:*.orig
-glob:*.pyc
-glob:*.swp
-glob:*~
-glob:Build.cmd
-glob:build
-glob:source/SciTE.properties

@@ -8,14 +8,17 @@ the menu item :menuselection:`Tools --> Options...`.
 .. index::
   options
 
+.. dialog:: Options
+
+.. tab:: General
+
 General options
 ---------------
 
 .. index::
   options; general
 
-The :tab:`General` options page in the :dialog:`Options` dialog allows to modify
-general options for TeXnicCenter.
+Here you can modify the general options for TeXnicCenter.
 
 .. figure:: images/optionsgeneral.*
 
@@ -46,13 +49,15 @@ The meaning of the controls is:
 
 .. _file-options:
 
+.. tab:: Files
+
 Files options 
 -------------
 
 .. index::
   options; files
 
-The :tab:`Files` options page in the dialog :dialog:`Options` allows to modify
+The :control:`Files` options page in the dialog :dialog:`Options` allows to modify
 the file handling of TeXnicCenter.
 
 .. figure:: images/optionsfiles.*
@@ -84,13 +89,15 @@ The meaning of the controls is:
   Save As...` individually. 
 
 
+.. tab:: Directories
+
 Directories options
 -------------------
 
 .. index::
   options; directories
 
-The :tab:`Directories` options page in the :dialog:`Options` dialog allows to
+The :control:`Directories` options page in the :dialog:`Options` dialog allows to
 modify the directory paths used by TeXnicCenter.
 
 .. figure:: images/optionsdirectories.*
@@ -116,13 +123,15 @@ The meaning of the controls is:
   is used. 
 
 
+.. tab:: Spelling
+
 Spelling options
 ----------------
 
 .. index::
   options; spelling
 
-The :tab:`Spelling` options page in the :dialog:`Options` dialog allows users to
+The :control:`Spelling` options page in the :dialog:`Options` dialog allows users to
 set spelling and language options for TeXnicCenter. See Advanced configuration
 for more information and settings about languages and spelling.
 
@@ -206,6 +215,7 @@ following content::
   second
   third
 
+.. tab:: Clean
 
 Clean options
 -------------
@@ -213,7 +223,7 @@ Clean options
 .. index::
   options; clean
 
-The :tab:`Clean` options page in the :dialog:`Options` dialog allows to modify
+The :control:`Clean` options page in the :dialog:`Options` dialog allows to modify
 file protection and file deletion options when :menuselection:`Build --> Clean
 Project` is invoked.
 
@@ -302,6 +312,8 @@ Clicking on the :button:`Cancel` button will dismiss any changes without
 applying them. 
 
 
+.. tab:: Text Format
+
 Text format options
 -------------------
 
@@ -312,8 +324,8 @@ TeXnicCenter allows to customize the font family, style and size for the
 navigator bar, the output bar and the editor window. Additionally, editor colors
 used for syntax highlighting can be modified as well.
 
-To customize the text format open the :dialog:`Customization` dialog and select
-the :tab:`Text Format` option page.
+To customize the text format open the :dialog:`Options` dialog and select
+the :control:`Text Format` option page.
 
 .. figure:: images/optionstextformat.*
 

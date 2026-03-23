@@ -1,8 +1,8 @@
 GNU General Public License
-==========================
+--------------------------
 
 Preamble
---------
+^^^^^^^^
 
 
 The licenses for most software are designed to take away your freedom to share
@@ -47,7 +47,7 @@ use or not licensed at all. The precise terms and conditions for copying,
 distribution and modification follow. 
 
 TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
----------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 0. This License applies to any program or other work which contains a notice
@@ -230,7 +230,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
     promoting the sharing and reuse of software generally.
 
 NO WARRANTY
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE
     PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE

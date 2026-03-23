@@ -72,3 +72,8 @@ The following conventions are used in this manual.
   
   An important note that shouldn't be ignored.
 
+
+.. include:: credits.rst
+.. include:: copyright.rst
+.. include:: license.rst
+

@@ -16,8 +16,10 @@ Several directories that contain document templates can be specified in the path
 options. The specified directories should contain sub-directories which
 represent the categories of the templates.
 
+.. dialog:: New Project
+
 When a new project is created TeXnicCenter provides the document templates found
-on the left side of the dialog :dialog:`New Project`.
+on the left side of the dialog :control:`New Project`.
 
 .. TODO: image
 
@@ -61,7 +63,7 @@ Whereby the directory :file:`Letters` contains the following templates:
 When creating a new project TeXnicCenter will analyse the directories specified
 in the path options. The sub-directories of the template directories listed
 there will become categories which are represented by the tabs on the left side
-of the :dialog:`Project New` dialog and the files contained in the
+of the :dialog:`New Project` dialog and the files contained in the
 sub-directories will be listed when the according tab has been chosen.
 
 In our example these tabs would be available:
@@ -85,16 +87,15 @@ File based document templates
 
 File based document templates are document templates created most easily.
 Templates of this type will be marked with this icon in the dialog
-:dialog:`Project New`:
+:dialog:`New Project`:
 
 .. TODO: TXC logo
 
 A file based document template is a simple text file with the :file:`.tex` file
-extension placed in one of the template directories specified in the tab Path
-options.
+extension placed in one of the template directories specified in the :tab:`Directories` options.
 
 Such a file can contain an optional description that will be displayed in the
-field template description of the dialog :dialog:`Project New`, when the
+field template description of the dialog :dialog:`New Project`, when the
 template has been selected by the user. To create such a description simply
 place a line starting with ``%description:`` followed by a space as the first
 line of the template.
@@ -120,13 +121,13 @@ Document wizards
 
 Document wizards are a special form of the document templates. Document
 templates of this type will be marked with this icon in the dialog
-:dialog:`Project New`:
+:dialog:`New Project`:
 
 .. TODO: image
 
 A document wizard helps to create a new document by guiding step by step through
 the creation process. Document wizards are provided as :term:`DLL` located in
-the template directories, specified on the :tab:`Path` options tab.
+the template directories, specified on the :tab:`Directories` options tab.
 
 Such wizards are provided on the TeXnicCenter homepage.
 

@@ -87,15 +87,18 @@ file:
 
   The file's drive letter (followed by colon ``:``). 
 
-Instead of :placeholder:`p`, :placeholder:`w`, :placeholder:`d` and
-:placeholder:`m` use the uppercase variants of these characters to get slashes
-``/`` instead of backslashes ``\\`` as path separators.
+Forward slashes for paths
+    Use the uppercase variants of
+    :placeholder:`p`, :placeholder:`w`, :placeholder:`d`, :placeholder:`m`
+    to get slashes ``/`` instead of backslashes ``\\`` as path separators.
 
-The percent sign ``%`` can be followed by an :placeholder:`s`. In this case, the
-placeholders will be replaced with paths matching the old 8.3 path convention.
+8.3 path convention
+    The percent sign ``%`` can be followed by an **s**. In this case, the
+    placeholders will be replaced with paths matching the old 8.3 path convention.
 
-To get a percent sign in the resulting string you have to use the placeholder
-:placeholder:`%%` which will always be replaced by ``%``.
+Percent sign
+    To get a percent sign in the resulting string you have to use the placeholder
+    :placeholder:`%%` which will always be replaced by ``%``.
 
 
 Placeholders referring to project's main file

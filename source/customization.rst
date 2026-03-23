@@ -2,21 +2,22 @@ Customization
 =============
 
 TeXnicCenter allows you to customize nearly every aspect of the graphical user
-interface (GUI). To customize the user interface of TeXnicCenter select in the
-:menuselection:`Tools --> Customize...` This will open the
-:dialog:`Customization` dialog.
+interface (GUI). To customize the user interface of TeXnicCenter select in the menu
+:menuselection:`Tools --> Customize...` This will open the *Customization* dialog.
 
-.. _customization-commands:
+.. dialog:: Customization
 
 Customizing commands
 --------------------
 
+.. tab:: Commands
+
 To customize commands which are available on several toolbars and menus open the
-:dialog:`Customization` dialog and select the :tab:`Commands` tab.
+*Customization* dialog and select the *Commands* tab.
 
 .. figure:: images/customizecommands.*
 
-  :dialog:`Command customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Commands`
 
 When this page is active you can simply drag & drop commands from one menu to
 another, from one toolbar to another, from a toolbar to a menu and vice versa.
@@ -33,24 +34,23 @@ The controls of the page are having the following meaning:
   Choose the category of commands to display in the list :control:`Commands`. 
 
 **Commands**
-  Commands available for the selected categorie. You can drag & drop the
+  Commands available for the selected category. You can drag & drop the
   commands listed here to the toolbars and menus. 
 
 **Description**
   A short description of the currently selected command in the list :control:`Commands`. 
 
 
-.. _customization-toolbars:
+.. tab:: Toolbars
 
 Customizing toolbars
 --------------------
 
-To customize the toolbars, open the dialog Customization and select the tab
-:tab:`Toolbars`.
+To customize the toolbars, open the :dialog:`Customization` and select the tab *Toolbars*.
 
 .. figure:: images/customizetoolbars.*
 
-  :dialog:`Toolbar customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Toolbars`
 
 The meanings of the controls are:
 
@@ -84,7 +84,7 @@ The meanings of the controls are:
   displayed with labels below the icons.
 
 
-.. _customization-tools:
+.. tab:: Tools
 
 Customizing the tools menu
 --------------------------
@@ -100,7 +100,7 @@ and select the tab :control:`Tools`.
 
 .. figure:: images/customizetools.*
 
-  :dialog:`Tools menu customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Tools`
 
 The meanings of the controls are:
 
@@ -124,7 +124,7 @@ The meanings of the controls are:
   placeholders for dynamic directories. 
 
 
-.. _customization-shortcuts:
+.. tab:: Keyboard
 
 Customizing keyboard shortcuts
 ------------------------------
@@ -132,12 +132,12 @@ Customizing keyboard shortcuts
 TeXnicCenter allows you to customize the key combinations (shortcuts), necessary
 to invoke a command without using the mouse.
 
-To customize the shortcuts, open the dialog Customization and select the tab
+To customize the shortcuts, open the :dialog:`Customization` dialog and select the tab
 :control:`Keyboard`.
 
 .. figure:: images/customizekeyboard.*
 
-  :dialog:`Keyboard shortcuts customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Keyboard`
 
 The meanings of the controls are:
 
@@ -177,18 +177,18 @@ The meanings of the controls are:
   shortcuts since the installation of TeXnicCenter will be lost. 
 
 
-.. _customization-menu:
+.. tab:: Menu
 
 Customizing menus
 -----------------
 
 TeXnicCenter allows you to customize the main and the context menus.  To
-customize the menus, open the dialog Customization and select the tab
-:tab:`Menu`.
+customize the menus, open the :dialog:`Customization` dialog and select the tab
+:control:`Menu`.
 
 .. figure:: images/customizemenu.*
 
-  :dialog:`Menu customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Menu`
 
 The meanings of the controls are:
 
@@ -197,7 +197,7 @@ Application Frame Menus
 
 **Show Menus for**
   List of available main window menus. Select the menu you would like to
-  customize.  For TeXnicCenter only the :dialog:`Default Menu` is available.  
+  customize.  For TeXnicCenter only the :control:`Default Menu` is available.  
   
 **Reset**
   Resets the selected main window menu. All the changes that have been made to
@@ -233,20 +233,18 @@ Context Menus
   context menu since the installation of TeXnicCenter will be lost. 
 
 
-.. _customization-look:
+.. tab:: Options
 
 Customizing the look and feel
 -----------------------------
 
-TeXnicCenter allows you to widely customize the look and feel of the graphical
-user interface including downloadable skins.
-
-To customize the look & feel open the :dialog:`Customization` dialog and select
-the :tab:`Options` tab.
+TeXnicCenter allows you to customize the look and feel of the graphical
+user interface. To do so, open the :dialog:`Customization` dialog and select
+the :control:`Options` tab.
 
 .. figure:: images/customizeoptions.*
 
-  :dialog:`Options customization` dialog
+  :dialog:`Customization` dialog with the active tab :tab:`Options`
 
 The controls of the page are having the following meanings:
 

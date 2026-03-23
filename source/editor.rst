@@ -28,9 +28,9 @@ Editor keyboard shortcuts
   shortcuts
 
 The following table lists the editor commands that are accessible via the
-keyboard. Some of these shortcuts can be :ref:`customized
-<customization-shortcuts>`, others are built-in. User-defined shortcuts take
-precedence over built-in shortcuts.
+keyboard. Some of these shortcuts can be :tab:`customized <Keyboard>`, others are built-in. User-defined shortcuts take precedence over built-in shortcuts.
+
+
 
 .. list-table:: Editor keyboard shortcuts
     :header-rows: 1
