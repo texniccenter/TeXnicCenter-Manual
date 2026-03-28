@@ -17,6 +17,7 @@ Contents:
   :maxdepth: 2
   
   introduction
+  userinterface
   configuration
   
   editor
@@ -30,6 +31,8 @@ Contents:
 
   placeholders
   commandline
+
+  structureparser
 
 
 Indices and tables

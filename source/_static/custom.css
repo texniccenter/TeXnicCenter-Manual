@@ -1,0 +1,21 @@
+div.note {
+    background: linear-gradient(#DDF, #FFF 3em);
+    border: 1px solid #CCF;
+}
+
+div.warning {
+    background: linear-gradient(#FDD, #FFF 3em);
+    border: 1px solid #FCC;
+}
+
+details {
+    background: linear-gradient(#DDF, #FFF 3em);
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px dotted #CCF;
+}
+
+details > summary {
+    margin-left: -1em;
+}
+
